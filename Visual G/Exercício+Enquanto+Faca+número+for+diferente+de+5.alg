@@ -1,6 +1,8 @@
 algoritmo "Exercício Enquanto Faca número for diferente de 5"
-// Função :
-// Autor :
+//  
+//  
+// Função : Enquanto Faca número for diferente de 5
+// Autor : Fernando Melo
 // Data : 16/01/2022
 // Seção de Declarações 
 var
