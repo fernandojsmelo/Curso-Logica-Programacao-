@@ -1,4 +1,6 @@
 algoritmo "Exercício Função Se Par ou Impar"
+//  
+//  
 // Função :
 // Autor :
 // Data : 13/01/2022
