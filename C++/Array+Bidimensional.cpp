@@ -32,7 +32,61 @@ int main(){
 		
 	}
 	
+	//----------------------------------------------
 
+	int matrizInteiros[2][3];
+	int linhaInteiros, colunaInteiros;
+
+	matrizInteiros[0][0] = 1;
+	matrizInteiros[0][1] = 2;
+	matrizInteiros[0][2] = 3;
+	matrizInteiros[1][0] = 4;
+	matrizInteiros[1][1] = 5;
+	matrizInteiros[1][2] = 6;
+
+	cout << "\n\n----- Vetor Números -------\n";
+	for ( linhaInteiros = 0; linhaInteiros < 2; linhaInteiros++ ){
+
+		for ( colunaInteiros = 0; colunaInteiros <3; colunaInteiros++ ){
+
+				cout << matrizInteiros[linhaInteiros][colunaInteiros] << " ";
+
+		}
+
+		cout << "\n";
+
+	}
+
+	//--------------------------------------
+
+	int matrizPreechimentoAutomatico[50][10];
+	int linhaPreechimentoAutomatico, colunaPreechimentoAutomatico;
+
+	for ( linhaPreechimentoAutomatico = 0; linhaPreechimentoAutomatico < 50; linhaPreechimentoAutomatico++ ){
+
+		for ( colunaPreechimentoAutomatico = 0; colunaPreechimentoAutomatico < 10; colunaPreechimentoAutomatico++ ){
+
+			matrizPreechimentoAutomatico[linhaPreechimentoAutomatico][colunaPreechimentoAutomatico] = colunaPreechimentoAutomatico;
+
+		}
+
+		cout << "\n";
+
+	}
+
+	cout << "\n\nImprindo Matriz Automática\n";
+
+	for ( linhaPreechimentoAutomatico = 0; linhaPreechimentoAutomatico < 50; linhaPreechimentoAutomatico++ ){
+
+		for ( colunaPreechimentoAutomatico = 0; colunaPreechimentoAutomatico < 10; colunaPreechimentoAutomatico++ ){
+
+			cout << matrizPreechimentoAutomatico[linhaPreechimentoAutomatico][colunaPreechimentoAutomatico] << "  ";
+
+		}
+
+		cout << "\n";
+
+	}
 	
 			
 	//Impede o fechamento da tela após execução do código para dar tempo de testarmos e ver o resultado
