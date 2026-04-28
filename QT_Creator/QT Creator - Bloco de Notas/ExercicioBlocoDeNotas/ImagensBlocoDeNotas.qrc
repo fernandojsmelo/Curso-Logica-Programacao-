@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Imagens">
+        <file>Imagens/abrir.png</file>
+        <file>Imagens/colar.png</file>
+        <file>Imagens/copiar.png</file>
+        <file>Imagens/recortar.png</file>
+        <file>Imagens/sair.png</file>
+        <file>Imagens/salvar.png</file>
+        <file>Imagens/sobre.png</file>
+    </qresource>
+</RCC>
