@@ -35,13 +35,13 @@ TelaPrincipal::TelaPrincipal(QWidget *parent) :
                                                 "font: bold 14px;");
 
     ui->btnExcluirFuncionario->setStyleSheet(
-                "color: white;"
-                "background-color: green;"
-                "border-style: outset;"
-                "border-width: 2px;"
-                "border-radius: 10px;"
-                "border-color: beige;"
-                "font: bold 14px;");
+                                               "color: white;"
+                                               "background-color: green;"
+                                               "border-style: outset;"
+                                               "border-width: 2px;"
+                                               "border-radius: 10px;"
+                                               "border-color: beige;"
+                                               "font: bold 14px;");
 
 
     QFont fonte = ui->lblTotalSalario->font();
