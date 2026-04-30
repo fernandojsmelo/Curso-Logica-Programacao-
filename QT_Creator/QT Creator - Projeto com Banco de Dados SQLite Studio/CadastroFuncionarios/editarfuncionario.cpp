@@ -101,13 +101,14 @@ void EditarFuncionario::on_btnSalvarEdicaoFuncionario_clicked()
     QSqlQuery dados;
 
     dados.prepare("Update Funcionarios set idFuncionario='"+id+"',"
-                                     "cpfFuncionario='"+cpf+"',"
-                                     "nomeFuncionario='"+nome+"',"
-                                     "salarioFuncionario='"+salario+"',"
-                                     "departamentoFuncionario='"+departamento+"',"
-                                     "dataNascimentoFuncionario='"+dataNascimento+"',"
-                                     "telefoneFuncionario='"+telefone+"',"
-                                      "emailFuncionario='"+email+"' where idFuncionario="+QString::number(idSelecionado));
+                                                         "cpfFuncionario='"+cpf+"',"
+                                                         "nomeFuncionario='"+nome+"',"
+                                                         "salarioFuncionario='"+salario+"',"
+                                                         "departamentoFuncionario='"+departamento+"',"
+                                                         "dataNascimentoFuncionario='"+dataNascimento+"',"
+                                                         "telefoneFuncionario='"+telefone+"',"
+                                                         "emailFuncionario='"+email+"' where idFuncionario="
+                                                         +QString::number(idSelecionado));
 
     if(dados.exec()){
 
