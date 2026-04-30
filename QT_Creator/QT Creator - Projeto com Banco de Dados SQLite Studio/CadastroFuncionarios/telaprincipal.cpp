@@ -304,14 +304,12 @@ void TelaPrincipal::on_btnExcluirFuncionario_clicked()
 
         ui->tableWidgetFuncionario->removeRow(linhaAtual);
 
-        QMessageBox::information(this, "Atenção",
-                                 "Funcionário excluido com sucesso!");
+        QMessageBox::information(this, "Atenção", "Funcionário excluido com sucesso!");
 
 
     }else{
 
-        QMessageBox::information(this, "Atenção",
-                                 "Erro ao excluir o funcionário!");
+        QMessageBox::information(this, "Atenção", "Erro ao excluir o funcionário!");
 
     }
 
