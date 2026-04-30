@@ -45,8 +45,7 @@ EditarFuncionario::EditarFuncionario(QWidget *parent, int alterarFuncionario_ID)
 
     }else{
 
-        QMessageBox::critical(this, "Atenção",
-                              "Erro ao carregar informações do funcionário");
+        QMessageBox::critical(this, "Atenção", "Erro ao carregar informações do funcionário");
 
     }
 
@@ -116,8 +115,7 @@ void EditarFuncionario::on_btnSalvarEdicaoFuncionario_clicked()
 
     }else{
 
-        QMessageBox::critical(this, "Atenção!",
-                              "Erro ao salvar as alterações");
+        QMessageBox::critical(this, "Atenção!", "Erro ao salvar as alterações");
 
     }
 
