@@ -49,8 +49,6 @@ EditarFuncionario::EditarFuncionario(QWidget *parent, int alterarFuncionario_ID)
 
     }
 
-
-
 }
 
 EditarFuncionario::~EditarFuncionario()
@@ -72,7 +70,6 @@ void EditarFuncionario::on_txtEditarFuncionario_Salario_editingFinished()
     ui->txtEditarFuncionario_Salario->setText("R$ " + valortexto);
 
 }
-
 
 void EditarFuncionario::on_btnSalvarEdicaoFuncionario_clicked()
 {
@@ -119,9 +116,6 @@ void EditarFuncionario::on_btnSalvarEdicaoFuncionario_clicked()
         QMessageBox::critical(this, "Atenção!", "Erro ao salvar as alterações");
 
     }
-
-
-
 
 }
 
