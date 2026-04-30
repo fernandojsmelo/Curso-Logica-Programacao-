@@ -39,7 +39,7 @@ void CadastroFuncionarios::on_btnSalvarFuncionario_clicked()
     salarioSemVirgula = ui->txtCadastroFuncionario_Salario->text();
 
     //Antes - R$ 1.235,10
-    //Depois - 1234.10
+    //Depois - 1235.10
     salarioSemVirgula.replace(0, 3, "");
     salarioSemVirgula.replace(".", "");
     salarioSemVirgula.replace(",", ".");
@@ -61,15 +61,13 @@ void CadastroFuncionarios::on_btnSalvarFuncionario_clicked()
     //Se
     if ( dados.exec() ){
 
-        QMessageBox::information(this, "Aviso",
-                                 "Registro salvo com sucesso!");
+        QMessageBox::information(this, "Aviso", "Registro salvo com sucesso!");
 
         this->close();
 
     }else{
 
-        QMessageBox::information(this, "Atenção",
-                                 "Não foi possivel salvar as informações no Banco de Dados!");
+        QMessageBox::information(this, "Atenção", "Não foi possivel salvar as informações no Banco de Dados!");
 
     }
 
