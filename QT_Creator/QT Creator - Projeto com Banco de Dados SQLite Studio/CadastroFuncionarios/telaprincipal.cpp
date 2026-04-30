@@ -54,10 +54,7 @@ TelaPrincipal::TelaPrincipal(QWidget *parent) :
     paleta.setColor(ui->lblTotalSalario->foregroundRole(), Qt::blue);
     ui->lblTotalSalario->setPalette(paleta);
 
-
     carregarDados();
-
-
 
 }
 
@@ -134,13 +131,9 @@ void TelaPrincipal::carregarDados(){
            //Mudo a cor do título
            ui->tableWidgetFuncionario->setStyleSheet("QHeaderView::section { color: white; background-color:blue }");
 
-
-
-
     }else{
 
-        QMessageBox::information(this, "Atenção",
-                                 "Erro ao carregar os funcionários!");
+        QMessageBox::information(this, "Atenção", "Erro ao carregar os funcionários!");
 
     }
 
@@ -170,9 +163,7 @@ void TelaPrincipal::on_txtPesquisarFuncionario_textChanged(const QString &arg1)
 
     QString textoPesquisa = ui->txtPesquisarFuncionario->text();
 
-    //SE
-
-
+        //SE
          if( colunaFiltro == "ID" ){
 
              //Like = Para não precisar digitar todo o nome, digitando parte do nome o like já trás
@@ -216,9 +207,6 @@ void TelaPrincipal::on_txtPesquisarFuncionario_textChanged(const QString &arg1)
 
          }
 
-
-
-
     int linha = 0;
 
     QSqlQuery pegaDados;
@@ -227,53 +215,47 @@ void TelaPrincipal::on_txtPesquisarFuncionario_textChanged(const QString &arg1)
 
     if(pegaDados.exec()){
 
-           //Enquanto o next encontrar algo
-           while(pegaDados.next()){
+        //Enquanto o next encontrar algo
+        while(pegaDados.next()){
 
-                //Insere a linha de acordo com a variavel linha
-                ui->tableWidgetFuncionario->insertRow(linha);
+            //Insere a linha de acordo com a variavel linha
+            ui->tableWidgetFuncionario->insertRow(linha);
 
-                //Passa os itens (linha, coluna, item QTableWidgetItem)
-                ui->tableWidgetFuncionario->setItem(linha, 0, new QTableWidgetItem(pegaDados.value(0).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 1, new QTableWidgetItem(pegaDados.value(1).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 2, new QTableWidgetItem(pegaDados.value(2).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 3, new QTableWidgetItem(pegaDados.value(3).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 4, new QTableWidgetItem(pegaDados.value(4).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 5, new QTableWidgetItem(pegaDados.value(5).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 6, new QTableWidgetItem(pegaDados.value(6).toString()));
-                ui->tableWidgetFuncionario->setItem(linha, 7, new QTableWidgetItem(pegaDados.value(7).toString()));
+            //Passa os itens (linha, coluna, item QTableWidgetItem)
+            ui->tableWidgetFuncionario->setItem(linha, 0, new QTableWidgetItem(pegaDados.value(0).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 1, new QTableWidgetItem(pegaDados.value(1).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 2, new QTableWidgetItem(pegaDados.value(2).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 3, new QTableWidgetItem(pegaDados.value(3).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 4, new QTableWidgetItem(pegaDados.value(4).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 5, new QTableWidgetItem(pegaDados.value(5).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 6, new QTableWidgetItem(pegaDados.value(6).toString()));
+            ui->tableWidgetFuncionario->setItem(linha, 7, new QTableWidgetItem(pegaDados.value(7).toString()));
 
-                ui->tableWidgetFuncionario->setRowHeight(linha, 40);
+            ui->tableWidgetFuncionario->setRowHeight(linha, 40);
 
-               linha++;
+            linha++;
 
-               QString valortexto;
+            QString valortexto;
 
-               auto formato = QLocale("de_DE");
-               double valorMoeda = somaTotalSalarios(ui->tableWidgetFuncionario, 3);
+            auto formato = QLocale("de_DE");
+            double valorMoeda = somaTotalSalarios(ui->tableWidgetFuncionario, 3);
 
-               //f = double - Casas decimais 5.50
-               valortexto = formato.toString(valorMoeda, 'f', 2);
+            //f = double - Casas decimais 5.50
+            valortexto = formato.toString(valorMoeda, 'f', 2);
 
-               ui->lblTotalSalario->setText("R$ "+ valortexto);
+            ui->lblTotalSalario->setText("R$ "+ valortexto);
 
-           }
+        }
 
-           ui->lblTotalRegistros->setText("Registro encontrados " + QString::number(linha));
+        ui->lblTotalRegistros->setText("Registro encontrados " + QString::number(linha));
 
     }else{
 
-         QMessageBox::information(this, "Atenção!",
-                                  "Erro ao encontrar funcionários");
+        QMessageBox::information(this, "Atenção!", "Erro ao encontrar funcionários");
 
     }
 
-
-
-
-
 }
-
 
 void TelaPrincipal::on_btnCadastrarFuncionarios_clicked()
 {
