@@ -148,7 +148,7 @@ void TelaPrincipal::carregarDados(){
 
 void TelaPrincipal::limparTableWidGet(QTableWidget *limpaTW){
 
-    //while = enquano
+    //while = enquanto
     while(limpaTW->rowCount() > 0){
 
         //0 = A primeira linha
