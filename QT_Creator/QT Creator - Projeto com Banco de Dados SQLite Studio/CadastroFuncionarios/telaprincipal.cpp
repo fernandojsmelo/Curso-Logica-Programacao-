@@ -267,7 +267,6 @@ void TelaPrincipal::on_btnCadastrarFuncionarios_clicked()
 
 }
 
-
 void TelaPrincipal::on_btnExcluirFuncionario_clicked()
 {
 
@@ -280,7 +279,6 @@ void TelaPrincipal::on_btnExcluirFuncionario_clicked()
 
     //From = Onde, Where = Quando
     bancoDeDados.prepare("Delete from Funcionarios Where idFuncionario="+idSelecionado);
-
 
     if( bancoDeDados.exec() ){
 
@@ -295,11 +293,7 @@ void TelaPrincipal::on_btnExcluirFuncionario_clicked()
 
     }
 
-
-
-
 }
-
 
 void TelaPrincipal::on_tableWidgetFuncionario_cellDoubleClicked(int row, int column)
 {
