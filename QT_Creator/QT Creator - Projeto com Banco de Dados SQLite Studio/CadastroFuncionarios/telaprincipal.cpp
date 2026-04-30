@@ -333,7 +333,6 @@ void TelaPrincipal::on_tableWidgetFuncionario_cellDoubleClicked(int row, int col
 
     dadosFuncionario.exec();
 
-
     //-----------------------------------------
 
     //Remover os dados da tableWidgetFuncionario
@@ -392,18 +391,11 @@ void TelaPrincipal::on_tableWidgetFuncionario_cellDoubleClicked(int row, int col
            //Mudo a cor do título
            ui->tableWidgetFuncionario->setStyleSheet("QHeaderView::section { color: white; background-color:blue }");
 
-
-
-
     }else{
 
-        QMessageBox::information(this, "Atenção",
-                                 "Erro ao carregar os funcionários!");
+        QMessageBox::information(this, "Atenção", "Erro ao carregar os funcionários!");
 
     }
-
-
-
 
 }
 
@@ -421,6 +413,7 @@ double TelaPrincipal::somaTotalSalarios(QTableWidget *tabela, int coluna){
     }
 
     return total;
+
 
 }
 
@@ -481,8 +474,7 @@ void TelaPrincipal::on_btnExportarExcel_clicked()
     //Fecha
     file.close();
 
-    QMessageBox::information(this, "Atenção!",
-                     "Relatório exportado com sucesso!");
+    QMessageBox::information(this, "Atenção!", "Relatório exportado com sucesso!");
 }
 
 QString TelaPrincipal::getValueAt(int linha, int coluna){
