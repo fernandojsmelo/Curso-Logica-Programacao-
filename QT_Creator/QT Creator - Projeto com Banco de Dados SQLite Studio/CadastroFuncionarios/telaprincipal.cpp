@@ -168,42 +168,60 @@ void TelaPrincipal::on_txtPesquisarFuncionario_textChanged(const QString &arg1)
 
              //Like = Para não precisar digitar todo o nome, digitando parte do nome o like já trás
              //% = Começe com qualquer valor e termine com qualquer valor
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where idFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where idFuncionario like '%"+textoPesquisa+"%'";
 
 
          }else if(  colunaFiltro == "CPF"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where cpfFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where cpfFuncionario like '%"+textoPesquisa+"%'";
 
          }else if(  colunaFiltro == "Nome"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where nomeFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where nomeFuncionario like '%"+textoPesquisa+"%'";
 
          }else if(  colunaFiltro == "Salário"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where salarioFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where salarioFuncionario like '%"+textoPesquisa+"%'";
 
          }else if(  colunaFiltro == "Departamento"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where departamentoFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where departamentoFuncionario like '%"+textoPesquisa+"%'";
 
          }else if(  colunaFiltro == "Data de Nascimento"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where dataNascimentoFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where dataNascimentoFuncionario like '%"+textoPesquisa+"%'";
 
 
          }else if(  colunaFiltro == "Telefone"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where telefoneFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where telefoneFuncionario like '%"+textoPesquisa+"%'";
 
 
          }else if(  colunaFiltro == "Email"  ){
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where emailFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where emailFuncionario like '%"+textoPesquisa+"%'";
 
          }else{
 
-             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, emailFuncionario From Funcionarios Where idFuncionario like '%"+textoPesquisa+"%'";
+             pesquisa = "Select idFuncionario, cpfFuncionario, nomeFuncionario, salarioFuncionario, "
+                        "departamentoFuncionario, dataNascimentoFuncionario, telefoneFuncionario, "
+                        "emailFuncionario From Funcionarios Where idFuncionario like '%"+textoPesquisa+"%'";
 
          }
 
