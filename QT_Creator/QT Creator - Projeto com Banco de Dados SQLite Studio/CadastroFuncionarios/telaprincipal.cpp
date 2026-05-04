@@ -416,8 +416,7 @@ void TelaPrincipal::on_btnExportarExcel_clicked()
 {
 
     //Caminho Arquivo para Salvar
-    auto nomeArquivo = QFileDialog::getSaveFileName(this,
-          "Salvar", QDir::rootPath(), "CSV File (*.csv)");
+    auto nomeArquivo = QFileDialog::getSaveFileName(this, "Salvar", QDir::rootPath(), "CSV File (*.csv)");
 
     if(nomeArquivo.isEmpty()){
 
@@ -427,7 +426,7 @@ void TelaPrincipal::on_btnExportarExcel_clicked()
     }
 
     //QIODevice::WriteOnly = O arquivo está aberto para escrita
-    //QIODevice::Text = Ao ler e escrever pula sempre para próxima
+    //QIODevice::Text      = Ao ler e escrever pula sempre para próxima
     QFile file(nomeArquivo);
     if(!file.open(QIODevice::WriteOnly | QIODevice::Text)){
 
