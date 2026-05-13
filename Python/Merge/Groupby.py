@@ -1,4 +1,4 @@
- import pandas as pd
+import pandas as pd
 
 vendas_DF = pd.read_excel("Groupby.xlsx")
 
