@@ -1,0 +1,56 @@
+('/home/fernandomelo/Cuso logica '
+ 'Progamação/Curso-Logica-Programacao-/TKinter/build/ExercicioCalculadora/ExercicioCalculadora.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/build/ExercicioCalculadora/PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/build/ExercicioCalculadora/localpycs/struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/build/ExercicioCalculadora/localpycs/pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/build/ExercicioCalculadora/localpycs/pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/build/ExercicioCalculadora/localpycs/pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/.venv/lib/python3.12/site-packages/PyInstaller/loader/pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/.venv/lib/python3.12/site-packages/PyInstaller/hooks/rthooks/pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('ExercicioCalculadora',
+   '/home/fernandomelo/Cuso logica '
+   'Progamação/Curso-Logica-Programacao-/TKinter/ExercicioCalculadora.py',
+   'PYSOURCE')],
+ 'libpython3.12.so.1.0',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
