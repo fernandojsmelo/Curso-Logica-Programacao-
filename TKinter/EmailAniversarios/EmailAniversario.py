@@ -40,7 +40,8 @@ arquivoAniversario["Aniversario"] = (
 
 #loc - Localiza e limita por um critério
 #Filtra e deixa somente os aniversariantes do dia
-arquivoAniversario = arquivoAniversario.loc[arquivoAniversario["Aniversario"] != "", ["Nome", "Nascimento", "Email"]]
+arquivoAniversario = arquivoAniversario.loc[
+    arquivoAniversario["Aniversario"] != "", ["Nome", "Nascimento", "Email"]]
 
 #print(arquivoAniversario)
 
