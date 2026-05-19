@@ -115,7 +115,6 @@ for linha in range(len(arquivoAniversario)):
                                  str(arquivoAniversario.iloc[linha, 1]),  # Aniversario
                                  str(arquivoAniversario.iloc[linha, 2]))) # Email
 
-
 # Criando a função que vai deletar o 'item'
 def deletarItemTreeview():
     itens = treeviewDados.selection()
@@ -129,7 +128,6 @@ def deletarItemTreeview():
 
         # Chama a função que conta linhas
         contarNumeroLinhas()
-
 
 # Criando o botão de deletar
 botaoDeletar = Button(text="Delatar",
@@ -162,7 +160,6 @@ email.grid(row=0, column=4, sticky="W")
 exibirEmail = Entry(font="Arial 12")
 exibirEmail.grid(row=0, column=5, sticky="W")
 
-
 # Criando a função para adicionar um novo 'item' na Treeview
 def addItemTreeview():
     # if - se
@@ -194,7 +191,6 @@ def addItemTreeview():
         exibirNascimento.delete(0, "end")
         exibirEmail.delete(0, "end")
 
-
 # Criando o botão de deletar
 botaoAdicionar = Button(text="Adicionar",
                         font="Arial 20",
@@ -202,7 +198,7 @@ botaoAdicionar = Button(text="Adicionar",
 
 botaoAdicionar.grid(row=1, column=2, columnspan=2, sticky="NSEW")
 
-
+# Criando a função para alterar um 'item' na Treeview
 def alterarItemTreeview():
     # if - se
     # elif - Senão Se
@@ -231,14 +227,12 @@ def alterarItemTreeview():
         exibirNascimento.delete(0, "end")
         exibirEmail.delete(0, "end")
 
-
 # Criando o botão de deletar
 botaoAlterar = Button(text="Alterar",
                       font="Arial 20",
                       command=alterarItemTreeview)
 
 botaoAlterar.grid(row=1, column=4, columnspan=2, sticky="NSEW")
-
 
 def criarEmail():
     # for - para
@@ -278,7 +272,6 @@ def criarEmail():
 
     messagebox.showinfo(title="Atenção!", message="Emails criados com sucesso!")
 
-
 # Criando o botão de deletar
 botaoCriarEmail = Button(text="Criar Email",
                          font="Arial 20",
@@ -290,7 +283,6 @@ labelNumeroLinhas = Label(text="Linhas: ", font="Arial 20")
 
 # Criando o labelNumeroLinhas na linha 4 que é em baixo da treeview
 labelNumeroLinhas.grid(row=4, column=0, columnspan=8, sticky="W")
-
 
 # Função que conta o total de linhas / Aniversariantes
 def contarNumeroLinhas(item=""):
@@ -305,10 +297,8 @@ def contarNumeroLinhas(item=""):
     # Imprimindo o total de linhas
     labelNumeroLinhas.config(text="Aniversariantes: " + str(numero))
 
-
 # Chama a função que conta linhas
 contarNumeroLinhas()
-
 
 def passaDadosParaEntry(Event):
     item = treeviewDados.selection()
@@ -323,7 +313,6 @@ def passaDadosParaEntry(Event):
         exibirNome.insert(0, treeviewDados.item(linha, "values")[0])
         exibirNascimento.insert(0, treeviewDados.item(linha, "values")[1])
         exibirEmail.insert(0, treeviewDados.item(linha, "values")[2])
-
 
 # Programa o evento de duplo clique para chamar a função que passa os dados para os Entry
 treeviewDados.bind("<Double-1>", passaDadosParaEntry)
