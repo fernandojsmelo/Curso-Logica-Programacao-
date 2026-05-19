@@ -5,28 +5,6 @@ import smtplib
 
 # Preparando o outlook
 outlook = smtplib.SMTP("smtp.gmail.com", 587)
-# import smtplib
-
-# Use SMTP or SMTP_SSL, NOT Dispatch
-# with smtplib.SMTP("smtp.gmail.com", 587) as server:
-#     server.starttls()
-#     server.login("fernandojsmelo@gmail.com", "Silv1M3l0")
-#     server.sendmail("from@example.com", "to@example.com",
-#                     "Subject: Hello\n\nBody text")
-
-from email.message import EmailMessage
-
-msg = EmailMessage()
-msg.set_content("Message body")
-msg['Subject'] = "Test Subject"
-msg['From'] = "fernandojsmelo@gmail.com"
-msg['To'] = "receiver@example.com"
-
-print(msg)
-# Connect to a server (e.g., Gmail)
-with smtplib.SMTP_SSL('smtp.gmail.com', 465) as server:
-    server.login("fernandojsmelo@gmail.com", "Silv1M3l0")
-    server.send_message(msg)
 
 # tk - Biblioteca do tkinter
 # Tk - Janela / Tela
@@ -235,6 +213,9 @@ botaoAlterar = Button(text="Alterar",
 botaoAlterar.grid(row=1, column=4, columnspan=2, sticky="NSEW")
 
 def criarEmail():
+    import smtplib
+    from email.message import EmailMessage
+
     # for - para
     for numeroLinha in treeviewDados.get_children():
         # Pego os dados da linha que estiver passando / seleciona naquele momento
@@ -242,7 +223,7 @@ def criarEmail():
         # print(dadosDaLinha)
 
         # Criar um email em branco / Novo email
-        emailOutlook = outlook.CreateItem(0)
+        #emailOutlook = outlook.CreateItem(0)
 
         nome = treeviewDados.item(numeroLinha)["values"][0]
         aniversario = treeviewDados.item(numeroLinha)["values"][1]
@@ -256,19 +237,60 @@ def criarEmail():
         # <font color="blue"> - Alterando a cor letra
         # <a href=""          - Para colocar um hyperlink
         # img src=            - Para colocar uma imagem
-        emailOutlook.To = email  # quem recebe o email
-        emailOutlook.Subject = "Feliz Aniversário " + str(nome)  # titulo da mensagem
-        emailOutlook.HTMLBody = f"""
-        <p>Parabéns, <b>{variavelNome}</b>!</p>
-        <p><font color="green">Esse é um dia especial, aproveite seu dia!</font></p>
-        <p><a href="https://www.google.com.br/">Clique aqui para acessar seu presente.</a></p>
-        <p>Atenciosamente.</p>
-        <p><img src="Assinatura_Email.jpeg">.</p>
-        """
+        # emailOutlook.To = email  # quem recebe o email
+        # emailOutlook.Subject = "Feliz Aniversário " + str(nome)  # titulo da mensagem
+        # emailOutlook.HTMLBody = f"""
+        # <p>Parabéns, <b>{variavelNome}</b>!</p>
+        # <p><font color="green">Esse é um dia especial, aproveite seu dia!</font></p>
+        # <p><a href="https://www.google.com.br/">Clique aqui para acessar seu presente.</a></p>
+        # <p>Atenciosamente.</p>
+        # <p><img src="Assinatura_Email.jpeg">.</p>
+        # """
 
         # save - Salvar como rascunho / 'draft'
         # send - envia
-        emailOutlook.save()
+        #emailOutlook.save()
+
+        # 1. Configurar o corpo do e-mail
+        corpo_email = f"""
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta charset="utf-8">
+            <title>Feliz Aniversário</title>
+            </head>
+            <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+                <div style="background-color: #ffffff; padding: 20px; border-radius: 8px;">
+                    <h1 style="color: #4CAF50;">Parabéns,  <b>{variavelNome}!</h1>
+                    <p>Feliz Aniversário, {nome}! </p>
+                    <p>Esse é um dia especial, aproveite seu dia!</p>
+                    <p>Atenciosamente.</p>
+                    <p><img src="Assinatura_Email.jpeg">.</p>
+                    <p>Aqui está um <a href="https://www.python.org" style="color: #2196F3;">link para o site oficial</a>.</p>
+                </div>
+            </body>
+            </html>
+            """
+        # 1. Configurar os dados do e-mail
+        email_remetente = "fernandojsmelo@gmail.com"
+        senha_app = "oioc szdp odib qunk"  # Gerada nas configurações da sua conta Google
+        email_destinatario = "destinatario@gmail.com"
+
+        msg = EmailMessage()
+        msg["Subject"] = "Feliz Aniversário"
+        msg["From"] = email_remetente
+        msg["To"] = email_destinatario
+        # msg.set_content("Este é o corpo do e-mail enviado automaticamente com Python.")
+        msg.set_content(corpo_email, subtype="html")
+
+        # 2. Conectar com o servidor do Gmail (SMTP) e enviar
+        try:
+            with smtplib.SMTP_SSL("smtp.gmail.com", 465) as servidor:
+                servidor.login(email_remetente, senha_app)
+                servidor.send_message(msg)
+            print("E-mail enviado com sucesso!")
+        except Exception as e:
+            print(f"Erro ao enviar o e-mail: {e}")
 
     messagebox.showinfo(title="Atenção!", message="Emails criados com sucesso!")
 
