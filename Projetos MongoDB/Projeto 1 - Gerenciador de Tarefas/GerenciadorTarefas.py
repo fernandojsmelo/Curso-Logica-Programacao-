@@ -52,7 +52,7 @@ class GerenciadorTarefasApp:
         # Conexão com o MongoDB
         # Cria uma instância do MongoClient para conectar ao
         # servidor MongoDB local na porta padrão 27017.
-        self.cliente = MongoClient("mongodb://localhost:27017/")
+        self.cliente = MongoClient("mongodb://admin:password123@localhost:27017/")
 
         # Acessa o banco de dados chamado 'gerenciador_tarefas_db'. Se o banco de
         # dados não existir, ele será criado automaticamente ao
@@ -637,23 +637,22 @@ class GerenciadorTarefasApp:
         tarefas = self.colecao.find(consulta)
 
         # Itera sobre as tarefas retornadas pela consulta ao banco de dados.
-        # for tarefa in tarefas:
-        #     # Insere cada tarefa no Treeview.
-        #     # - "" especifica que o 'item' será inserido na raiz do Treeview, ou seja, sem um pai.
-        #     # - tk.END insere o 'item' no final da lista.
-        #     # - 'values' define os valores a serem exibidos nas colunas do Treeview.
-        #     # - 'iid' atribui um identificador exclusivo ao 'item' no Treeview,
-        #     # aqui convertido do '_id' do MongoDB para string.
-        #     self.arvore_tarefas.insert("", tk.END,
-        #                                values=(tarefa["titulo"],
-        #                                        tarefa["descricao"],
-        #                                        tarefa["status"]),
-        #                                iid=str(tarefa["_id"]))
+        for tarefa in tarefas:
+            # Insere cada tarefa no Treeview.
+            # - "" especifica que o 'item' será inserido na raiz do Treeview, ou seja, sem um pai.
+            # - tk.END insere o 'item' no final da lista.
+            # - 'values' define os valores a serem exibidos nas colunas do Treeview.
+            # - 'iid' atribui um identificador exclusivo ao 'item' no Treeview,
+            # aqui convertido do '_id' do MongoDB para string.
+            self.arvore_tarefas.insert("", tk.END,
+                                       values=(tarefa["titulo"],
+                                               tarefa["descricao"],
+                                               tarefa["status"]),
+                                       iid=str(tarefa["_id"]))
 
     # Define o método 'adicionar_tarefa', responsável por adicionar uma
     # nova tarefa ao banco de dados MongoDB.
     def adicionar_tarefa(self):
-        print("...Adicionando tarefa...")
         """
         Este método adiciona uma nova tarefa ao banco de dados MongoDB.
         Ele coleta os dados inseridos pelo utilizador nos campos da 'interface', valida o título da tarefa,
@@ -711,7 +710,7 @@ class GerenciadorTarefasApp:
     # tarefa para garantir que os campos fiquem vazios
     # e prontos para uma nova entrada de dados.
     def limpar_campos_entrada(self):
-        print("...Limpando campos de entrada...")
+
         """
         Este método limpa os campos de entrada da 'interface' gráfica.
         Ele é utilizado após operações como adicionar, atualizar ou excluir uma tarefa,
@@ -737,7 +736,7 @@ class GerenciadorTarefasApp:
     # Define o método 'atualizar_tarefa', que é responsável por
     # atualizar as informações de uma tarefa existente no MongoDB.
     def atualizar_tarefa(self):
-        print("...Adicionando tarefa...")
+
         """
         Este método atualiza a tarefa atualmente selecionada no MongoDB.
         Ele coleta os dados dos campos de entrada da 'interface' gráfica e
@@ -819,7 +818,7 @@ class GerenciadorTarefasApp:
     # Define o método 'excluir_tarefa', que remove uma
     # tarefa do banco de dados MongoDB.
     def excluir_tarefa(self):
-        print("...Excluir tarefa...")
+
         """
         Este método exclui a tarefa atualmente selecionada no banco de dados MongoDB.
         Ele confirma a exclusão com o utilizador antes de executar a operação.
@@ -867,7 +866,7 @@ class GerenciadorTarefasApp:
     # Define o método 'aplicar_filtro', que aplica o filtro de
     # status escolhido pelo utilizador.
     def aplicar_filtro(self):
-        print("...Adicionando filtro...")
+
         """
         Este método obtém o status selecionado no ComboBox de filtros,
         aplica o filtro de status escolhido e recarrega a lista de tarefas no Treeview.
@@ -899,7 +898,7 @@ class GerenciadorTarefasApp:
     # O parâmetro 'event' contém informações sobre o evento
     # disparado pela seleção no Treeview.
     def ao_selecionar_tarefa(self, event):
-        print("...ao selecionar tarefa...")
+
         """
         Este método é executado ao selecionar uma tarefa no Treeview.
         Ele carrega os dados da tarefa selecionada nos campos de entrada da 'interface',
