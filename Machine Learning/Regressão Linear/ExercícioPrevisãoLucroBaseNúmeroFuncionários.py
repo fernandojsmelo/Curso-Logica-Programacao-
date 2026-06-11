@@ -7,16 +7,16 @@ import numpy as np
 
 # Importando a biblioteca 'tkinter' com o apelido 'tk'.
 # Tkinter é uma biblioteca padrão do Python para criar
-# interfaces gráficas de usuário (GUI).
+# ‘interfaces’ gráficas de utilizador (GUI).
 # Ela fornece widgets como botões, entradas de texto, rótulos,
 # etc., que podem ser usados para construir
-# aplicativos de desktop.
+# aplicativos de ‘desktop’.
 import tkinter as tk
 
 # Importando o módulo 'messagebox' da biblioteca 'tkinter'.
 # 'messagebox' é usado para exibir caixas de diálogo de alerta,
 # erro, confirmação e informação, facilitando a
-# interação com o usuário.
+# interação com o utilizador.
 from tkinter import messagebox
 
 # Importando a classe 'LinearRegression' do módulo 'linear_model'
@@ -46,12 +46,12 @@ def mostrar_tela(tela):
 
     # 'tela.pack()' adiciona o frame especificado pelo parâmetro 'tela'
     # ao gerenciador de geometria.
-    # Isso torna a tela especificada visível ao usuário. O layout e
+    # Isso torna a tela especificada visível ao utilizador. O layout e
     # os widgets da tela especificada serão mostrados.
     tela.pack()
 
 
-# Esta função define 'exibir_grafico', que tem como objetivo
+# Esta função define 'exibir_grafico', cujo objetivo é
 # visualizar os dados e as previsões de lucro de funcionários,
 # levando em consideração o tempo de operação das empresas.
 def exibir_grafico(funcionarios, tempo_operacao, lucros, modelo, entrada_prever=None, previsao_lucro=None):
@@ -95,7 +95,7 @@ def exibir_grafico(funcionarios, tempo_operacao, lucros, modelo, entrada_prever=
         # 'entrada_prever[:, 0]' acessa todos os elementos da primeira
         # coluna da matriz 'entrada_prever',
         # que representa o número de funcionários para os
-        # quais o lucro está sendo previsto.
+        # quais o lucro está a ser previsto.
         plt.scatter(
 
             # Acessa a primeira coluna de 'entrada_prever', que são os
@@ -159,7 +159,7 @@ def exibir_dados_reais():
         # Concatena informações de cada empresa à string 'dados_texto'. 'i' é
         # o índice atual do loop, começando de 0.
         # 'funcionarios[i][0]' acessa o número de funcionários da i-ésima
-        # empresa (nota: assumimos que 'funcionarios' é uma lista de listas).
+        # empresa (nota: assumimos que 'funcionários' é uma lista de listas).
         # 'tempo_operacao[i][0]' acessa o tempo de operação da i-ésima empresa.
         # 'lucros[i]' acessa o lucro da i-ésima empresa, formatado como
         # valor monetário com duas casas decimais e separadores de milhar.
@@ -278,7 +278,7 @@ lucros = [100000, 150000, 200000, 250000, 300000, 350000, 400000, 450000, 500000
 # A conversão para arrays do Numpy permite a utilização
 # eficiente desses dados em cálculos e modelagens estatísticas.
 
-# Convertendo a lista 'funcionarios' em um array Numpy
+# Convertendo a lista 'funcionários' em um array Numpy
 # para permitir operações matemáticas eficientes.
 funcionarios = np.array(funcionarios)
 
@@ -308,7 +308,7 @@ entradas = np.hstack((funcionarios, tempo_operacao))
 # linha de regressão que relaciona as entradas com os lucros.
 modelo.fit(entradas, lucros)
 
-# Interface Tkinter
+# 'Interface' Tkinter
 # Cria uma nova janela Tkinter que servirá como a
 # janela principal do aplicativo.
 janela_principal = tk.Tk()
@@ -334,17 +334,17 @@ tela_principal.pack()
 label_menu = tk.Label(tela_principal,
                       text="Menu de Opções",
                       font=("Arial", 20))
-# 'tela_principal' é o contêiner onde o rótulo será colocado.
+# 'tela_principal' é o 'contêiner' onde o rótulo será colocado.
 # 'text' define o texto que aparecerá no rótulo, neste caso, "Menu de Opções".
 # 'font' define a fonte e o tamanho do texto, aqui usamos "Arial" tamanho 20.
 
-# 'pack()' é usado para organizar e mostrar o widget na interface.
+# 'pack()' é usado para organizar e mostrar o widget na 'interface'.
 # 'pady=10' adiciona um espaçamento vertical de 10 pixels acima e
 # abaixo do rótulo para separá-lo visualmente de outros widgets.
 label_menu.pack(pady=10)
 
 # Criação de um botão dentro da tela principal.
-# 'tk.Button' cria um botão que os usuários podem clicar
+# 'tk.Button' cria um botão que os utilizadores podem clicar
 # para executar uma ação.
 btn_exibir_dados = tk.Button(tela_principal,
                              text="1 - Exibir Dados Reais",
@@ -378,7 +378,7 @@ btn_prever = tk.Button(tela_principal,
 # 'command=lambda: mostrar_tela(tela_previsao)' associa uma
 # função que será chamada quando o botão for clicado.
 # Neste caso, o botão muda a exibição para 'tela_previsao',
-# onde os usuários podem inserir dados para prever o lucro.
+# onde os utilizadores podem inserir dados para prever o lucro.
 
 # Usa 'pack()' para organizar e mostrar o botão na tela.
 # 'pady=5' adiciona um espaçamento vertical de 5 pixels acima e
