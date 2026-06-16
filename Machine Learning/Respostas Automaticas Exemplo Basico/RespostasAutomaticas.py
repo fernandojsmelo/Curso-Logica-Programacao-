@@ -274,7 +274,8 @@ def tratar_mensagem(mensagem):
         # Se a lista 'numeros' não estiver vazia, processa a subtração.
         if numeros:
             # Adiciona a resposta da subtração dos números à lista de respostas.
-            respostas.append(f"A subtração dos números é {subtrair_numeros(numeros)}")
+            respostas.append(
+                f"A subtração dos números é {subtrair_numeros(numeros)}")
 
     # Verifica se a palavra "multiplique" está presente na mensagem.
     if "multiplique" in mensagem:
@@ -283,7 +284,8 @@ def tratar_mensagem(mensagem):
         if numeros:
             # Adiciona a resposta da multiplicação dos números à
             # lista de respostas.
-            respostas.append(f"A multiplicação dos números é {multiplicar_numeros(numeros)}")
+            respostas.append(
+                f"A multiplicação dos números é {multiplicar_numeros(numeros)}")
 
     # Verifica se a palavra "divida" está presente na mensagem.
     if "divida" in mensagem:
@@ -370,7 +372,7 @@ def enviar_mensagem():
     # de inserção de mensagens.
     text_area.config(state=tk.DISABLED)
 
-    # Limpa o campo de entrada para que esteja pronto
+    # Limpa o campo de entrada para estar pronto
     # para uma nova mensagem.
     entrada.delete(0, tk.END)
 
@@ -392,16 +394,12 @@ janela.title('Chatbot com Funções Adicionais')
 # janela criada anteriormente.
 # 'font=("Arial", 14)' define a fonte e o tamanho do
 # texto que será exibido.
-# 'wrap=tk.WORD' configura a quebra de linha para que ocorra na
+# 'wrap=tk.WORD' configura a quebra de linha para ocorrer na
 # fronteira entre palavras, evitando cortar as
 # palavras ao meio.
 # 'width=50' e 'height=20' definem a largura e altura do
 # widget em unidades de linhas e colunas de texto, respectivamente.
-text_area = Text(janela,
-                 font=("Arial", 14),
-                 wrap=tk.WORD,
-                 width=50,
-                 height=20)
+text_area = Text(janela, font=("Arial", 14), wrap=tk.WORD, width=50, height=20)
 
 # Organiza o widget 'text_area' dentro da janela
 # usando o método 'pack'.
@@ -412,12 +410,12 @@ text_area = Text(janela,
 text_area.pack(expand=tk.YES, fill=tk.BOTH)
 
 # Configura o widget 'text_area' para o estado DISABLED,
-# que impede o usuário de editar o texto diretamente.
-# Isso é útil para garantir que o texto só possa ser modificado
-# pelo programa e não manualmente pelo usuário.
+# que impede o utilizador de editar o texto diretamente.
+# Isso serve para garantir que o texto só possa ser modificado
+# pelo programa e não manualmente pelo utilizador.
 text_area.config(state=tk.DISABLED)
 
-# Cria um widget 'Entry' para entrada de texto, onde o usuário
+# Cria um widget 'Entry' para entrada de texto, onde o utilizador
 # pode digitar suas mensagens.
 # 'janela' é o contêiner pai onde este widget será inserido,
 # indicando que faz parte da janela principal.
@@ -426,9 +424,7 @@ text_area.config(state=tk.DISABLED)
 # 'width=50' define a largura do campo de entrada, suficiente
 # para acomodar mensagens mais longas sem necessidade
 # de rolagem horizontal.
-entrada = tk.Entry(janela,
-                   font=("Arial", 20),
-                   width=50)
+entrada = tk.Entry(janela, font=("Arial", 20), width=50)
 
 # Posiciona o widget 'entrada' na janela usando o
 # gerenciador de layout 'pack'.
@@ -447,9 +443,7 @@ entrada.pack(side=tk.LEFT, padx=10, pady=10)
 # que é chamada sempre que o botão é pressionado.
 # Esta função é responsável por ler o texto do campo de entrada,
 # processá-lo e exibir a resposta no 'text_area'.
-btn_enviar = tk.Button(janela,
-                       text='Enviar',
-                       command=enviar_mensagem)
+btn_enviar = tk.Button(janela, text='Enviar', command=enviar_mensagem)
 
 # Posiciona o botão 'btn_enviar' na janela.
 # 'side=tk.RIGHT' posiciona o botão no lado direito da janela,
@@ -457,9 +451,7 @@ btn_enviar = tk.Button(janela,
 # 'padx=10' e 'pady=10' adicionam um preenchimento similar ao
 # do campo de entrada, mantendo a consistência
 # visual e funcional.
-btn_enviar.pack(side=tk.RIGHT,
-                padx=10,
-                pady=10)
+btn_enviar.pack(side=tk.RIGHT, padx=10, pady=10)
 
 # Iniciar o loop principal do Tkinter
 janela.mainloop()
