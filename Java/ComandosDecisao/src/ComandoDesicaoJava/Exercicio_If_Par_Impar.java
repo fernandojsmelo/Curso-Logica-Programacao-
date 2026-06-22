@@ -1,8 +1,6 @@
 /*
- 
  Crie um algoritmo que leia um número e 
  verifique se ele é PAR ou ÍMPAR.
- 
  */
 
 package ComandoDesicaoJava;
