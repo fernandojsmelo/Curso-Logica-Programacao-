@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a2b9a74-bf01-4a49-9a9a-89c2ecd0616f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ComandosDecisao/src/ComandoDesicaoJava/Funcao_IF.java" afterDir="false" />
-    </list>
+    <list default="true" id="0a2b9a74-bf01-4a49-9a9a-89c2ecd0616f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
