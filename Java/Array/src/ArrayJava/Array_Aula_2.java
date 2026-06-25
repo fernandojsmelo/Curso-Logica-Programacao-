@@ -38,59 +38,53 @@ public class Array_Aula_2 {
 		
 		String[] letras = {"A", "B", "C", "D", "E", "F", "G", "H"};
 		
-		
 		System.out.println("\n\n>>>> For Array Letras <<<<<< ");
-		
+
 		//For utilizado como uma opção para ler itens do Array
 		for(String linha : letras) {
-			
+
 			System.out.println(linha);
-			
+
 		}
-		
+
 		//-------------------------------
-		
+
 		int[] numeros = {18, 22, 37, 44, 51, 67, 78, 86, 91, 150};
-				
-				
+
 		System.out.println("\n\n>>>> For Array Numeros <<<<<< ");
-				
+
 		//For utilizado como uma opção para ler itens do Array
 		for(int linha : numeros) {
-					
+
 			System.out.println(linha);
-					
+
 		}
-		
+
 		//-------------------------------------
-		
 		//fill - Preenche os arrays com um valor pre-determinado
 		Arrays.fill(numeros, 5);
-		
+
 		System.out.println("\n\n>>>> For Array fill <<<<<< ");
-		
+
 		//For utilizado como uma opção para ler itens do Array
 		for(int linha : numeros) {
-					
+
 			System.out.println(linha);
-					
+
 		}
-		
+
 		//-------------------------------------
-		
 		//fill - Preenche os arrays com um valor pre-determinado
 		Arrays.fill(letras, "W");
-				
+
 		System.out.println("\n\n>>>> For Array Letras fill <<<<<< ");
-				
+
 		//For utilizado como uma opção para ler itens do Array
 		for(String linha : letras) {
-							
+
 			System.out.println(linha);
-							
+
 		}
-		
-		
 		
 	}
 
