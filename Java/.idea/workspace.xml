@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a2b9a74-bf01-4a49-9a9a-89c2ecd0616f" name="Changes" comment="" />
+    <list default="true" id="0a2b9a74-bf01-4a49-9a9a-89c2ecd0616f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,11 +19,73 @@
     <commands />
     <urls />
   </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.2146413754157397" />
+      <entry key="MS500" value="1.765272835605316" />
+      <entry key="S2" value="2.8378249352497047" />
+      <entry key="S5" value="4.383727411494611" />
+      <entry key="S10" value="5.432777799241333" />
+      <entry key="S30" value="6.405175381516811" />
+      <entry key="S60" value="6.692871998013922" />
+      <entry key="M2" value="6.913892730552744" />
+      <entry key="M5" value="8.386652526235569" />
+      <entry key="M10" value="10.95786839258386" />
+      <entry key="M15" value="12.571898869695328" />
+      <entry key="M30" value="14.832199844557614" />
+      <entry key="H1" value="16.282631313158305" />
+      <entry key="H2" value="17.105056029222098" />
+      <entry key="H4" value="17.543074044700788" />
+      <entry key="D1" value="17.922498234849712" />
+      <entry key="W1" value="17.988894862838073" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.1571135281100726" />
+      <entry key="MS500" value="1.7480798033077705" />
+      <entry key="S2" value="2.8280504209418678" />
+      <entry key="S5" value="4.376567176071444" />
+      <entry key="S10" value="5.428161196434981" />
+      <entry key="S30" value="6.403327234360385" />
+      <entry key="S60" value="6.691902918445721" />
+      <entry key="M2" value="6.913384410554722" />
+      <entry key="M5" value="8.386342906519523" />
+      <entry key="M10" value="10.95761391440256" />
+      <entry key="M15" value="12.571686610857848" />
+      <entry key="M30" value="14.832063541828347" />
+      <entry key="H1" value="16.28255340180357" />
+      <entry key="H2" value="17.105014295165027" />
+      <entry key="H4" value="17.54305243628106" />
+      <entry key="D1" value="17.92249452627587" />
+      <entry key="W1" value="17.988894330360868" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="3FN5XusXOaN9Q1mQzwPBfIBoEml" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,9 +101,19 @@
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/fernandomelo/Curso-Logica-Programacao-/Java/DoWhile/src/EstruturaRepeticao&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/DoWhile/src/EstruturaRepeticao" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
