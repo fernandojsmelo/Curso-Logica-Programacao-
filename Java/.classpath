@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Array/src"/>
+	<classpathentry kind="src" path="ComandosDecisao/src"/>
+	<classpathentry kind="src" path="DoWhile/src"/>
+	<classpathentry kind="src" path="For/src"/>
+	<classpathentry kind="src" path="Matriz/src"/>
+	<classpathentry kind="src" path="Metodos e Classes/src"/>
+	<classpathentry kind="src" path="PrimeirosPasos/src"/>
+	<classpathentry kind="src" path="While/src"/>
+	<classpathentry kind="output" path="Metodos e Classes/out/production/Metodos e Classes"/>
+</classpath>
