@@ -19,7 +19,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
-public class JTable_Populando_com_ArrayList {
+public class JTablePopulandoArrayList {
 
 	private JFrame frmTrabalhandoComJtable;
 	private JTextField txtNome;
@@ -34,7 +34,7 @@ public class JTable_Populando_com_ArrayList {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					JTable_Populando_com_ArrayList window = new JTable_Populando_com_ArrayList();
+					JTablePopulandoArrayList window = new JTablePopulandoArrayList();
 					window.frmTrabalhandoComJtable.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -46,10 +46,10 @@ public class JTable_Populando_com_ArrayList {
 	/**
 	 * Create the application.
 	 */
-	public JTable_Populando_com_ArrayList() {
+	public JTablePopulandoArrayList() {
 		initialize();
 		
-		//Popular as informações
+		//Popular as informaï¿½ï¿½es
 		populaInformacoesNaJTable();
 	}
 
@@ -112,11 +112,11 @@ public class JTable_Populando_com_ArrayList {
 				//DefaultTableModel - Biblioteca para trabalharmos com a tabela
 				DefaultTableModel configacoesTabela = (DefaultTableModel)tabelaNomes.getModel();
 				
-				//Pega o número da linha selecionada
+				//Pega o nï¿½mero da linha selecionada
 				int selecionaNumeroLinha = tabelaNomes.getSelectedRow();
 				
-				//selecionaNumeroLinha - Número da linha
-				//0 - Número da coluna
+				//selecionaNumeroLinha - Nï¿½mero da linha
+				//0 - Nï¿½mero da coluna
 				//toString - Converte o objeto para texto
 				//getValueAt - Pega o valor da linha
 				txtNome.setText(configacoesTabela.getValueAt(selecionaNumeroLinha, 0).toString());
@@ -167,25 +167,25 @@ public class JTable_Populando_com_ArrayList {
 				//DefaultTableModel - Biblioteca para trabalharmos com a tabela
 				DefaultTableModel modelo = (DefaultTableModel)tabelaNomes.getModel();
 				
-				//Pega o número da linha que está selecionada
+				//Pega o nï¿½mero da linha que estï¿½ selecionada
 				int linha = tabelaNomes.getSelectedRow();
 				
 				//if - se
 				if(linha >= 0) {
 					
 					//modelo - DefaultTableModel
-					//setValueAt - colocar/alterar uma informação
-					//txtNome.getText() - Pegando o texto que está no campo do txt
-					//linha - O número da linha que eu selecionei
-					//0 - O número da coluna que vou altera a informação
+					//setValueAt - colocar/alterar uma informaï¿½ï¿½o
+					//txtNome.getText() - Pegando o texto que estï¿½ no campo do txt
+					//linha - O nï¿½mero da linha que eu selecionei
+					//0 - O nï¿½mero da coluna que vou altera a informaï¿½ï¿½o
 					modelo.setValueAt(txtNome.getText(), linha, 0);
 					modelo.setValueAt(txtSobrenome.getText(), linha, 1);
 					modelo.setValueAt(txtIdade.getText(), linha, 2);
 				
-				//else - senão
+				//else - senï¿½o
 				}else {
 					
-					JOptionPane.showMessageDialog(null, "Por favor, selecione uma linha para alterar a informação");
+					JOptionPane.showMessageDialog(null, "Por favor, selecione uma linha para alterar a informaï¿½ï¿½o");
 					
 				}
 				
@@ -240,7 +240,8 @@ public class JTable_Populando_com_ArrayList {
 		return (ArrayList<E>) lista;
 		
 	}
-	
+
+
 	public void populaInformacoesNaJTable(){
 		
 		
