@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/txtTotalPontos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Pontos: 0"
+            android:textSize="34dp"/>
+
+        <LinearLayout
+            android:id="@+id/llJogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="A dica é: "
+                android:textSize="34dp"
+                android:textColor="#000000"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:id="@+id/llLetras1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ECECEC"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLetraMontada1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+
+                <TextView
+                    android:id="@+id/txtLetraMontada4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLetras2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#ECECEC"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtLetraMontada14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+
+                <TextView
+                    android:id="@+id/txtLetraMontada17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/txtLetraMontada26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="_"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra1"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="1"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra2"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="2"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra4"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="4"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra6"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="6"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra8"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="8"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra10"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="10"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra3"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="3"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra5"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="5"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra7"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="7"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra9"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="9"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra11"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="11"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra12"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="12"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra13"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="13"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra14"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="14"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra15"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="15"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra16"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="16"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra17"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="17"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra18"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="18"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra19"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="19"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra20"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="20"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra21"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="21"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra22"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="22"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra23"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="23"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra24"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="24"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra25"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="25"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="4dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="8dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonLetra26"
+                        android:layout_width="50dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="#C9C9C9"
+                        android:text="26"
+                        android:textColor="#000000"
+                        android:textSize="20dp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnEmbaralhar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Embaralhar"
+                    android:textAllCaps="false"
+                    android:textSize="24dp">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSair"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:text="Sair"
+                    android:textAllCaps="false"
+                    android:textSize="24dp">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
