@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Ola_mundo/1.0.0": {
+        "runtime": {
+          "Ola_mundo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ola_mundo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

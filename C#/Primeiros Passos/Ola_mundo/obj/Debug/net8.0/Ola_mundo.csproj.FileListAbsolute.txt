@@ -1,0 +1,15 @@
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/bin/Debug/net8.0/Ola_mundo
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/bin/Debug/net8.0/Ola_mundo.deps.json
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/bin/Debug/net8.0/Ola_mundo.runtimeconfig.json
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/bin/Debug/net8.0/Ola_mundo.dll
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/bin/Debug/net8.0/Ola_mundo.pdb
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.GeneratedMSBuildEditorConfig.editorconfig
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.AssemblyInfoInputs.cache
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.AssemblyInfo.cs
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.csproj.CoreCompileInputs.cache
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.sourcelink.json
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.dll
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/refint/Ola_mundo.dll
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.pdb
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/Ola_mundo.genruntimeconfig.cache
+/home/fernandomelo/Curso-Logica-Programacao-/C#/Primeiros Passos/Ola_mundo/obj/Debug/net8.0/ref/Ola_mundo.dll
