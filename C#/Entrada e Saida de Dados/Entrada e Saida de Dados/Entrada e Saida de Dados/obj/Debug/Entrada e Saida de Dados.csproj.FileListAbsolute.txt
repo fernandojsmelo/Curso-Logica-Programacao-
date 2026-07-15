@@ -1,0 +1,8 @@
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\bin\Debug\Entrada e Saida de Dados.exe.config
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\bin\Debug\Entrada e Saida de Dados.exe
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\bin\Debug\Entrada e Saida de Dados.pdb
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\obj\Debug\Entrada e Saida de Dados.csproj.AssemblyReference.cache
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\obj\Debug\Entrada e Saida de Dados.csproj.SuggestedBindingRedirects.cache
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\obj\Debug\Entrada e Saida de Dados.csproj.CoreCompileInputs.cache
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\obj\Debug\Entrada e Saida de Dados.exe
+C:\Users\55119\Desktop\Curso de C#\Primeiros Passos\Entrada e Saida de Dados\Entrada e Saida de Dados\obj\Debug\Entrada e Saida de Dados.pdb
